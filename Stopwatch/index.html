@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>StopWatch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch">
+            <h1 id="displaytime">00:00:00</h1>
+
+            <div class="btn">
+                <button><i class="fa-regular fa-circle-pause" style="color: #000000;"></i></button>
+                <button><i class="fa-solid fa-play" style="color: #000000;" onclick="watchSatrt();"></i></button>
+                <button><i class="fa-solid fa-eraser" style="color: #000000;"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let [seconds , minutes , hours] = [0 , 0 , o];
+        let displayTime = document.getElementById('displaytime');
+        let timer = null;
+
+
+        function stopWatch() {
+            seconds++;
+            if(seconds===60) {
+                seconds = 0;
+                minutes++
+                if(minutes===60) {
+                    minutes = 0;
+                    hours++;
+                }
+            }
+            displayTime.innerHTML = hours +":"+ minutes +":" seconds;
+        }
+
+        function watchSatrt() {
+            if(timer! = null) {
+                clearInterval(timer);
+            }
+            timer =  setInterval(stopWatch(),1000);
+        }
+
+    </script>
+
+</body>
+</html>

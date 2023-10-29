@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>User</title>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="check" aria-hidden="true">
+        <div class="singup">
+            <form>
+                <label for="check" aria-hidden="true">User Confirmation</label>
+                <input type="text" name="username" placeholder="Username" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button type="submit">Sing up</button>
+        </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <label for="check" aria-hidden="true">User Verification</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

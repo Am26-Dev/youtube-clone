@@ -1,0 +1,62 @@
+.row{
+    height: 100px;
+    background-color: rgb(209, 77, 232);
+}
+
+.col-sm-8{
+    background-color: rgb(0, 0, 0);;
+}
+
+button{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+hr{
+    height: 40px;
+}
+
+.photo{
+    display: flex;
+}
+
+/**.box1{
+    height: 200px;
+    background-color: rgb(201, 194, 194);
+    border-radius: 4px;
+}**/
+
+.d-grid{
+    margin-top: 20px;
+}
+
+.keyy{
+    margin-top: 20px;
+}
+
+
+.progress{
+    margin-top: 25px;
+}
+
+.list-group{
+    margin-top: 25px;
+}
+
+.card{
+    margin-top: 25px;
+}
+
+.dropdown{
+    margin-top: 25px;
+}
+
+.container{
+    margin-top: 25px;
+}
+
+.navs{
+    margin-top: 25px;
+}
+
+.

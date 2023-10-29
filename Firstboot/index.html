@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Web Page Using Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <!--This is CDN css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--This is CDN js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    
+</head>
+<body>
+
+<!--Containers in Bootstrap-->
+
+    <div class="container p-5 my-5 bg-primary text-white">
+        <h1>My First Bootstrap Page</h1>
+        <p>This part is inside a .container class</p>
+        <p>The .container class provides a responsive fixed width container .</p>
+    </div>
+
+    <div class="container-fluid">
+        <h1>My First Bootstrap Page</h1>
+        <p>This part is inside a .container-fluid class</p>
+        <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport. </p>
+    </div>
+
+    <!--Getting the idea of GRID SYSTEM in Bootstrap-->
+
+    <!--<div class="row bg-primary text-white">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+    </div>-->
+
+<div class="row text-white">
+  <div class="col-sm-3">.col-sm-3</div>
+  <div class="col-sm-3">.col-sm-3</div>
+  <div class="col-sm-3">.col-sm-3</div>
+  <div class="col-sm-3">.col-sm-3</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4 bg-primary">small cloumn</div>
+    <div class="col-sm-8 text-white"><mark>bigger</mark> than that column
+        <button>click me</button>
+    </div>
+</div>
+<hr>
+
+<table class=" table table-striped table-hover">
+    <tr class="table-active">
+        <th>Team</th>
+        <th>Matches</th>
+        <th>Win</th>
+        <th>Lose</th>
+        <th>Tie</th>
+    </tr>
+    <tr class="table-warning">
+        <td>CSK</td>
+        <td>16</td>
+        <td>10</td>
+        <td>5</td>
+        <td>1</td>
+    </tr>
+    <tr class="table-dark">
+        <td>GT</td>
+        <td>17</td>
+        <td>12</td>
+        <td>5</td>
+        <td>0</td>
+    </tr>
+
+    <tr class="table-success">
+        <td>LSG</td>
+        <td>14</td>
+        <td>8</td>
+        <td>5</td>
+        <td>1</td>
+    </tr>
+
+    <tr class="table-info">
+        <td>MI</td>
+        <td>14</td>
+        <td>8</td>
+        <td>6</td>
+        <td>0</td>
+    </tr>
+</table>
+
+
+<!--IMAGE SECTION-->
+
+<div class="photo">   
+    <img src="Transformers (2007) - IMDb.jpeg"  class="img-thumbnail mx-auto d-block img-fluid" alt="bumblebee" width="450px">
+    <img src="Textless Movie Posters (IPhone and other phones).jpeg"  class="img-thumbnail mx-auto d-block img-fluid" alt="poster" width="450px">
+</div>
+
+
+<!--ALERT SECTION-->
+
+
+<div class="box1 mt-3 ">
+    <div class="alert alert-info alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>ATTENTION!!</strong> You should <a href="#" class="alert-link">read this message</a>
+    </div>
+</div>
+
+<!--BUTTON SECTION-->
+
+
+<button type="button" class="btn btn-outline-primary">SAVE</button>
+
+<a href="#" class="btn btn-danger">Link</a>
+<input type="button" class="btn btn-info btn-lg" value="input button">
+<div class="d-grid">
+    <button type="button" class="btn btn-success btn-block">Full Width Button</button>
+</div>
+
+<div class="d-grid gap-4">
+    <button type="button" class="btn btn-primary">Full Width Button</button>
+    <button type="button" class="btn btn-info">Full Width Button</button>   <button type="button" class="btn btn-dark">Full Width Button</button>
+</div>
+
+<div class="keyy">
+<button type="button" class="btn btn-primary avtive">Active</button>
+
+<button type="button" class="btn btn-danger disabled">Disabled</button>
+    
+<a href="#" class="btn btn-primary disabled">Disabled Link</a>
+
+<button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span>
+</button>
+
+<button class="btn btn-primary">
+    <span class="spinner-grow spinner-grow-sm"></span>
+    Loading...
+</button>
+</div>
+
+<div class="btn-group mt-3">
+    <button type="button" class="btn btn-primary">Google</button>
+    <button type="button" class="btn btn-primary">Apple</button>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Samsung</button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Smartphone</a>
+            <a class="dropdown-item" href="#">Tablet</a>
+            <a class="dropdown-item" href="#">Home Appliences</a>
+        </div>
+    </div>
+</div>
+
+<div class="btn-group mt-3">
+    <button type="button" class="btn btn-primary">Google</button>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" dropdown-bs-toggle="dropdown">Apple</button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Macbook</a>
+            <a class="dropdown-item" href="#">iMac</a>
+            <a class="dropdown-item" href="#">Mac mini</a>
+        </div>   
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" dropdown-bs-toggle="dropdown">Samsung</button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Smartphone</a>
+            <a class="dorpdown-item" href="#">Laptop</a>
+            <a class="dropdown-item" href="#">Buds</a>
+        </div>
+    </div>
+</div>
+
+<!---PROGREE BAR Section-->
+
+<div class="progress">
+  <div class="progress-bar" style="width:70%">70%</div>
+</div>
+
+<div class="progress" style="height:20px">
+  <div class="progress-bar bg-warning progress-bar-striped  progress-bar-animated" style="width:40%;"></div>
+</div>
+
+<div class="progress" style="height: 25px;">
+    <div class="progress-bar bg-info progress-bar-animated progress-bar-stripped" style="width:25%">25%</div>
+
+    <div class="progress-bar bg-warning progress-bar-animated progress-bar-stripped" style="width: 10%;">10%</div>
+
+    <div class="progres-bar bg-danger progress-bar-animated progress-bar-stripped" style="width:38%;">38%</div>
+</div>
+<div class="spinner-border text-danger"></div>
+
+<!--PAGINATION Section-->
+
+<ul class="pagination pagination-sm">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item "><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item "><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+
+
+<!--LIST GROUP Sectio-->
+
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">Inbox
+        <sapn class="badge bg-primary rounded-pill">12</sapn>
+    </li>
+    
+    <li class="list-group-item active">Second item</li>
+    <li class="list-group-item list-group-item-success">Third item</li>
+    <li class="list-group-item list-group-item-danger">Fourth item</li>
+</ul>
+
+<div class="list-group list-group-horizontal">
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">First item</a>
+    <a href="#" class="list-group-item list-group-item-action">Second item</a>
+    <a href="#" class="list-group-item list-group-item-action disabled">Third item</a>
+    <a href="#" class="list-group-item list-group-item-action">Fourth item</a>
+</div>
+
+<!--CARD Section-->
+
+<div class="card" style="width: 400px">
+    <img class="card-img-top" src="Transformers (2007) - IMDb.jpeg"  alt="Card img">
+    <div class="card-img-overlay">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This space is for content to be written.</p>
+        <a href="#" class="btn btn-primary">Card link</a>
+    </div>
+   <div class="card-footer bg-dark text-white">Footer</div>
+</div>
+
+
+<!--DROPDOWN Section-->
+
+<div class="dropdown ">
+    <button type="button" class="btn btn-primary
+    dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown Button
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Link 1</a></li>
+        <li><a class="dropdown-item disabled" href="#">Link 2</a></li>
+        <li><a class="dropdown-item-text" href="#">Link 3</a></li>
+        <li><hr class="dropdown-divider"></hr>
+        <a class="dropdown-item" href="#" >Another Link</a></li>
+    </ul>
+</div>
+
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony
+    </button> 
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Tablet</a></li> 
+        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+    </ul>
+</div>
+
+<!--COLLAPSE SECTION-->
+
+<div class="container">
+
+<button data-bs-toggle="collapse" data-bs-target="#demo" class="btn btn-primary">Collapsible</button>
+
+<div id="demo" class="collapse ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, blanditiis assumenda? Ab, ut cupiditate porro velit optio doloribus hic suscipit eos quisquam asperiores sed excepturi blanditiis fuga perspiciatis repellendus quidem</div>
+
+</div>
+
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+        Collapsible Group Item #1
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+        Collapsible Group Item #3
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!--NAVS SECTION-->
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="#home" data-bs-toggle="tab">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#menu1" data-bs-toggle="tab">Menu 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#menu2" data-bs-toggle="tab">Menu 2</a>
+  </li>
+</ul>
+
+<!--TAB PANES-->
+
+<div class="tab-content">
+  <div class="tab-pane container active" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi culpa ducimus cum nesciunt, deserunt </div>
+
+  <div class="tab-pane container fade" id="menu1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa obcaecati sint sunt. Quod nemo</div>
+
+  <div class="tab-pane conatiner fade" id="menu2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+</div>
+
+
+<!--NAVBAR SECTION-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-5">
+
+
+<div class="container-fluid">
+
+  <ul class="navbar-nav">
+
+    <a class="navbar-brand" href="#">
+
+      <img  src="dave-lsoogGC_5dg-unsplash.jpg" alt="nature" style="width: 40px; height: 40px;" class="rounded-pill">
+    </a>
+
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+
+    <div class="conatiner-fluid">
+      <span class="navbar-text">Navbar text</span>
+    </div>
+
+  </ul>
+</div>
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark mt-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LOGO</a>
+    <button class="navbar-toggler" type="button"
+    data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav> 
+
+
+<!--Navbar With Dropdown-->
+
+
+<nav class="navbar bg-dark navbar-dark">
+
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      <img src="dave-lsoogGC_5dg-unsplash.jpg" alt="image" style="width: 40px;" class="rounded-pill">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button">Dropdown</a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link</a></li>
+
+            <li><a class="dropdown-item" href="#">Another link</a></li>
+            
+            <li><a class="dropdown-item" href="#">A third link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Navbar Forms and Buttons-->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--CAROUSEL/SLIDESHOW SSECTION-->
+
+<!--<div id="demo" class="carousel slide mt-3" data-bs-ride="carousel" >
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="landscape1.jpg" alt="scape1" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="landscape2.jpg" alt="scape2" class="d-block w-100">
+    </div>
+
+    <div class="carousel-item">
+      <img src="landscape3.jpg" alt="scape3" class="d-block w-100">
+    </div> 
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>-->
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="la.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had sucha great time in LA</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="chicago.jpg" alt="Chicago" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<!--MODAL SECTION-->
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  Open modal
+</button>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <!--Modal Header-->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!--Modal Body-->
+
+      <div class="modal-body">
+        Modal Body..
+      </div>
+
+      <!--Modal Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<!--TOOLTIP SECTION-->
+<div class="tool mt-3">
+  <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hello!">Hover over me!</button>
+</div>
+
+<script>
+  //Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+<!--TOAST SECTION-->
+
+<div class="toast show mt-3">
+  <div class="toast-header">
+    Toast header  
+    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+  </div>
+  <div class="toast-body">
+    Some text inside the toast body
+  </div>
+</div>
+
+<!--OFFCANVAS SECTION-->
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+
+<!-- Button to open the offcanvas sidebar -->
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+  Open Offcanvas Sidebar
+</button>
+
+<!--FLEXBOX SECTION-->
+<div class="d-inline-flex p-3 mt-3 flex-row bg-dark text-white">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-danger">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+<div class="d-flex p-3 mt-3 justify-content-around bg-dark text-white">
+  <div class="p-2 bg-info ">Flex item 1</div>
+  <div class="p-2 bg-danger ">Flex item 2</div>
+  <div class="p-2 bg-primary ">Flex item 3</div>
+</div>
+
+
+</body>
+</html>

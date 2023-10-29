@@ -1,0 +1,113 @@
+.nav-item img{
+    width: 60px;
+    height: 60px;
+}
+
+body{
+    margin: 0;
+    font-family: "Sofia Pro Black",Arial,sans-serif;;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #0065c3;
+    padding: 10px;
+    color: white;
+}
+
+.nav-left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-item{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    color: #d4d4d4;
+}
+
+.nav-right .nav-item{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 25px;
+}
+
+.product{
+    display: flex;
+}
+
+
+.product-item img{
+    margin-top: 30px;
+    margin-left: 210px;
+    width: 400px;
+    height: 500px;
+   
+}
+
+.product-launch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 83px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-launch .intro{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+.product-launch .middle{
+    color: rgb(230, 109, 34);
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.product-launch .last{
+    font-size: 70px;
+    color: #fff;
+}
+
+
+.product-launch .any{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 650;
+    margin: 5px;
+}
+
+.product-launch .any2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 650;
+}
+
+.product-launch button{
+    border: 2px solid #fff;
+    border-radius: 30px; 
+    margin-top: 30px;
+    padding: 8px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+}
+

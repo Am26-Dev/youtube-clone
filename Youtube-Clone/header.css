@@ -24,7 +24,13 @@ header{
     height: 28px;
     margin-left: 24px;
     margin-right: 24px;
+    padding: 2px;
     cursor: pointer;
+}
+
+.hamburger-icon:hover{
+    background-color: lightgray;
+    border-radius: 50%;
 }
 
 .youtube-icon{
@@ -215,13 +221,29 @@ header{
     right: 0;
     display: flex;
     height: 50px;
-    width: 100%;
     align-items: center;
     justify-content: space-around;
     background-color: white;
     z-index: 90;
     flex-shrink: 0;
+    overflow: auto;
 }
+
+/* .more-options::-webkit-scrollbar{
+    width: 1px;
+}
+
+.more-options::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+.more-options:hover::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+}
+
+.more-options:hover{
+    overflow-x: scroll;
+} */
 
 .more-options button{
     border: none;

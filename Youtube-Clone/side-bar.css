@@ -19,7 +19,8 @@
 }
 
 .side-bar:hover::-webkit-scrollbar-thumb{
-    background-color: darkgrey;
+    background-color: lightgray;
+    border-radius: 5px;
 }
 
 .side-bar:hover{

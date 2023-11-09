@@ -1,0 +1,279 @@
+.main{
+    width: 900px;
+    background-color: rgb(15, 15, 15);
+    height: 100%; 
+    position: fixed;
+    top: 38px;
+    left: 480px;
+    border-radius: 8px;
+    /* border-left: 1px solid white; */
+    overflow: auto;
+    margin-right: -80px;
+}
+
+.nav-row{
+    width: 900px;
+    background-color:  rgb(15, 15, 15);  
+    height: 70px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: fixed;
+    top: 38px;
+    left: 480px;
+    z-index: 100;
+    /* padding-top: 12px;*/
+    padding-bottom: 18px;
+}
+
+
+.nav-row i{
+    margin-top: 18px;
+    margin-bottom: 10px;
+    padding: 9px 12px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: rgba(83, 83, 83, 0.345);
+} 
+
+
+.nav-row .fa-chevron-left{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.btons{
+    display: flex;
+    flex-shrink: 0; 
+    margin-left: 500px;
+}
+
+.btons .premium{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    color: black;
+    font-weight: 600;
+    padding: 0px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btons i{
+    font-size: 16px;
+    padding: 10px 10px ;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.btons .fa-user{
+    margin-right: 8px;
+}
+
+
+.main::-webkit-scrollbar{
+    width: 1px;
+}
+
+.main::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.main:hover::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 5px;
+}
+.main:hover{
+    overflow-y: scroll;
+}
+
+
+.main-banner{
+    background: linear-gradient(to top right, black , rgb(15, 15, 15)); 
+    margin-top: 70px;
+    border-radius: 5px;
+    margin-left: 18px;
+    display: flex;
+    height: 385px;
+    margin-right: 14px;
+}
+
+
+.main-banner img{
+    margin-top: 80px;
+    height: 230px;
+    margin-right: 20px;
+    margin-left: 18px;
+    cursor:pointer;
+}
+
+
+.playlist-info .playlist-name + p , .playlist-info > p{
+    cursor: default;
+}
+
+.playlist-info{
+    margin-top: 15px;
+}
+
+
+.playlist-info .playlist-name{
+    font-size: 79px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.playlist-info .sponsor{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    margin-left: 490px;
+}
+
+.playlist-info > p{
+    font-weight: 600;
+}
+
+
+.playlist-info p + p{
+    font-size: 16px;
+}
+
+.play-btn{
+    background-color: rgb(88, 246, 88);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 35px;
+    border-radius: 25px;
+    margin-top: 28px;
+    margin-right: 25px;
+    color: black;
+}
+
+.play-btn:hover , .follow-btn:hover{
+    transform: scale(1.1);
+}
+
+.follow-btn{
+    font-size: 16px;
+    font-weight: 600;
+    border: 0.5px solid rgba(215, 212, 212, 0.881);
+    background-color: black;
+    color: white;
+    padding: 13px 35px;
+    border-radius: 28px;
+    margin-top: 28px;
+}
+
+
+.playlist-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.Recently-played , .Recently-played2{
+    margin-left: 18px;
+    margin-right: 14px;
+    margin-top: 28px;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.Recently-played p+p , .Recently-played2 p + p{
+    font-size: 14px;
+    color: #c6c3c3;
+}
+
+
+.section-1{
+    height: 280px;
+    display: flex;
+}
+
+
+.part1{
+   background-color: rgb(27, 27, 27); 
+   font-family: 500;
+   width: 195px;
+   border-radius: 10px;
+   margin-top: 20px;
+   margin-left: 18px;
+   height: 280px;
+   position: relative;
+   transition: all 0.2s ease-in;
+   /* z-index: -1; */
+}
+
+.part1 .play-pause{
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    width: 51px;
+    height: 51px;
+    background-color: rgb(100, 246, 100);
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+}
+
+
+.part1 .play-pause i{
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 4px;
+}
+
+.part1:hover{
+    background-color: rgb(52, 52, 52);
+    .play-pause{
+        display: block;
+    }
+}
+
+.part1 img{
+    height: 165px;
+    border-radius: 8px;
+    margin: 14px;
+}
+
+.part1 p {
+    margin-left: 18px;
+}
+
+.part1 .song-name{
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.part1 p+p{
+    font-size: 14px;
+    margin-top: 4px;
+    letter-spacing: -0.09;
+    color: #c6c3c3;
+}
+
+.section-2{
+    height: 290px;
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.Recently-played2{
+    margin-top: 75px;
+}

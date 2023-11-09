@@ -5,7 +5,8 @@
 
 body{
     margin: 0;
-    font-family: "Sofia Pro Black",Arial,sans-serif;;
+    font-family: "Sofia Pro Black",Arial,sans-serif;
+    width: 1000vw;
 }
 
 .navbar{
@@ -45,6 +46,7 @@ body{
 
 .product{
     display: flex;
+    width: 100%;
 }
 
 

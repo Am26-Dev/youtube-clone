@@ -3,167 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--CSS FILES-->
+    
+    <link rel="stylesheet" href="library-list.css">
+    <link rel="stylesheet" href="current-song.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
+    
     <title>Spotify-clone</title>
 </head>
 <body>
+    <div class="main">
+            <div class="nav-row">
+                <div class="back-forward">
+                    <i class="fa-solid fa-chevron-left" style="color: #c6c3c399;"></i>
+                    <i class="fa-solid fa-chevron-right" style="color: #c6c3c399;"></i>
+                </div>
+                <div class="btons">
+                    <button class="premium">Explore Premium</button>
+                    <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-user-group" style="color: #ffffff;"></i>
+                    <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                </div>
+            </div>
 
-<!--WHOLE BODY SECTION-->
 
+            <div class="main-banner">
+                <img src="images/main-banner-img.png" alt="">
+                <div class="playlist-info">
+                    <p>PLAYLIST</p>
+                    <button class="sponsor">Sponsored</button>
+                    <p class="playlist-name">Best Indian Lofi Hits</p>
+                    <p>Listen to the most relaxing and Chill songs only on Best Indain Lofi Hits <br> playlist Chill beats to relax and focus!</p>
+                    <button class="play-btn">Play</button><button class="follow-btn">Follow</button>
+                </div>
+            </div>
+
+            <div class="Recently-played">
+                <p class="p1">Recently Played</p>
+                <p>Show all</p>
+            </div>
+
+            <div class="section-1">
+                <div class="part1">
+                    <img src="images/hype-boy.png" alt="">
+                    <p class="song-name">Hype Boy</p>
+                    <p>NewJeans</p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img src="images/golden.png" alt="">
+                    <p class="song-name">Seven</p>
+                    <p>Jungkook</p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img src="images/run-bts2.png" alt="">
+                    <p class="song-name">Run BTS</p>
+                    <p>BTS</p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img src="images/butter.png" alt="">
+                    <p class="song-name">Butter</p>
+                    <p>BTS</p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Recently-played2">
+                <p class="p1">Made For rockbison</p>
+                <p>Show all</p>
+            </div>
+
+            <div class="section-2">
+                <div class="part1">
+                    <img src="images/release-radar.png" alt="">
+                    <p class="song-name">Release Radar</p>
+                    <p>Catch all the latest music from artists</p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img src="images/daily-mix1.png" alt="">
+                    <p class="song-name">Daily Mix 1</p>
+                    <p>BTS,Tomorrow X Together, Augst D...</p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img src="images/daily-mix2.png" alt="">
+                    <p class="song-name">Daily Mix 2</p>
+                    <p>Twice, Blackpink, ITZY and more </p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="part1">
+                    <img src="images/daily-mix3.png" alt="">
+                    <p class="song-name">Daily Mix 3</p>
+                    <p>Pritam, Amit Trivedi, Jasleen Royal and more</p>
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                </div>
+            </div>
+
+    </div>
 
     <div class="container">
 
-        <!--SIDE NAV-->
+        <i class="fa-solid fa-ellipsis top-dots" style="color: #ffffff;"></i>
+        <div class="top-nav">
+            <div class="home">
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i><span>Home</span>
+            </div>
+            <div class="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i><span>Search</span>
+            </div>
+        </div>
 
-        <aside>
-            <i class="fa-solid fa-ellipsis top-dots" style="color: #ffffff;"></i>
-            <div class="top-nav">
-                <div class="home">
-                    <i class="fa-solid fa-house" style="color: #ffffff;"></i><span>Home</span>
+        <div class="section">
+            <div class="left-right-sec">
+                <div class="left-section">
+                    <i class="fa-regular fa-file-audio your-library" style="color: #ffffff;"></i>
+                    <span>Your Library</span>
                 </div>
-                <div class="search">
-                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i><span>Search</span>
+
+                <div class="right-section">
+                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
                 </div>
             </div>
-            
-            <!--SIDE NAV LIBRARY SECTION-->
-
-            <div class="library">
-
-                <!--LIBRARY TOP NAV SECTION-->
-
-                <div class="fixed-top-nav">
-                    <div class="section">
-                        <div class="left-section">
-                            <i class="fa-regular fa-file-audio your-library" style="color: #ffffff;"></i>
-                            <span>Your Library</span>
-                        </div>
-
-                        <div class="right-section">
-                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
-                            <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
-                        </div>
-                    </div>
-                    <div class="btns">  
-                        <button>Playlists</button>
-                        <button>Albums</button>
-                        <button>Artists</button>
-                    </div>  
-                </div>
-
-                <!--LIBRARY BELOW SECTION-->
-
-                <div class="below-section">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #c6c3c3;"></i>
-                    <div class="recents">
-                        <span>Recents</span><i class="fa-solid fa-list-ul" style="color: #ffffff;"></i>
-                    </div>
-                </div>
-
-                <div class="lists">
-                    <div class="liked-songs">
-                        <img src="images/liked-songs.png" alt="">
-                        <p>Liked Songs <br> <span><i class="fa-solid fa-thumbtack" style="color: #00ff33;"></i>Playlist  &#x2022; 200 songs</span></p>
-                    </div>
-                    <div class="playlist-1">
-                        <img src="images/take-two.png" alt="">
-                        <p>Take Two <br><span>Album &#x2022; BTS</span></p>
-                    </div>
-                    <div class="playlist-2">
-                        <img src="images/artists.png" alt="">
-                        <p>BTS<br><span>Playlist &#x2022; rockbison</span></p>
-                    </div>
-                    <div class="playlist-3">
-                        <img src="images/top-songs.png" alt="">
-                        <p>Your Top Songs 2022 <br><span>Playlist &#x2022; Spotify</span></p>
-                    </div>
-                    <div class="playlist-4">
-                        <img src="images/bts.png" alt="">
-                        <p>BTS<br><span>Artist </span></p>
-                    </div>
-                    <div class="playlist-5">
-                        <img src="images/indigo.png" alt="">
-                        <p>Indigo <br><span>Album &#x2022; RM</span></p>
-                    </div>
-                    <div class="playlist-6">
-                        <img src="images/dreamers.png" alt="">
-                        <p>Dreamers[Music from the FIFA World Cup] <br><span>Album &#x2022; Jung Kok</span></p>
-                    </div>
-                    <div class="playlist-7">
-                        <img src="images/the-astronaut.png" alt="">
-                        <p>The Astronaut <br><span>Album &#x2022; JIN</span></p>
-                    </div>
-                    <div class="playlist-8">
-                        <img src="images/pied-piper.png" alt="">
-                        <p>Pied Piper<br><span>Playlist &#x2022; rockbison</span></p>
-                    </div>
-                    <div class="artist-1">
-                        <img src="images/v.png" alt="">
-                        <p>V <br><span>Artist</span></p>
-                    </div>
-                    <div class="artist-2">
-                        <img src="images/jimin.png" alt="">
-                        <p>Jimin<br><span>Artist</span></p>
-                    </div>
-                    <div class="artist-3">
-                        <img src="images/j-hope.png" alt="">
-                        <p>j-hope<br><span>Artist</span></p>
-                    </div>
-                    <div class="artist-4">
-                        <img src="images/suga.png" alt="">
-                        <p>SUGA <br><span>Artist</span></p>
-                    </div>
-                    <div class="artist-5">
-                        <img src="images/rm.png" alt="">
-                        <p>RM <br><span>Artist</span></p>
-                    </div>
-                    <div class="artist-6">
-                        <img src="images/jin.png" alt="">
-                        <p>JIN <br><span>Artist</span></p>
-                    </div>
-                    <div class="artist-7">
-                        <img src="images/jk.png" alt="">
-                        <p>Jung Kook <br><span>Artist</span></p>
-                    </div>
-                </div>
-            </div>
-        </aside>
+            <div class="btns">  
+                <button>Playlists</button>
+                <button>Albums</button>
+                <button>Artists</button>
+            </div>  
+        </div>
         
-
-        <!--CURRENT PLAYING SONG SECTION-->
-
-        <div class="current-song">
-            <div class="right-part">
-                <img src="images/run-bts.png" alt="">
-                <p><span>Run BTS</span> <br> <span class="second">BTS</span></p>
-                <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
-            </div>
-
-            <div class="middle-part">
-                <div class="upper-part">
-                    <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-circle-pause" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-repeat" style="color: #ffffff;"></i>
-                </div>
-
-                <div class="lower-part">
-                   <span class="moment">0:20</span><img src="images/progress-bar2.png" alt=""><span class="total-duration">3:24</span>
-                </div>
-            </div>
-
-            <div class="left-part">
-                <i class="fa-solid fa-circle-play" style="color: #c6c3c3;"></i>
-                <i class="fa-solid fa-microphone" style="color: #c6c3c3;"></i>
-                <i class="fa-solid fa-layer-group" style="color: #c6c3c3;"></i>
-                <i class="fa-solid fa-computer" style="color: #c6c3c3;"></i>
-                <i class="fa-solid fa-volume-high" style="color: #c6c3c3;"></i>
-                <img src="images/volume-bar.png" alt="">
+        <div class="below-section">
+            <i class="fa-solid fa-magnifying-glass" style="color: #c6c3c3;"></i>
+            <div class="recents">
+                <span>Recents</span><i class="fa-solid fa-list-ul" style="color: #ffffff;"></i>
             </div>
         </div>
     </div>
+             
+    <div class="lists">
+        <div class="liked-songs">
+            <img src="images/liked-songs.png" alt="">
+            <p>Liked Songs <br> <span><i class="fa-solid fa-thumbtack" style="color: #00ff33;"></i>Playlist  &#x2022; 200 songs</span></p>
+        </div>
+        <div class="playlist-1">
+            <img src="images/take-two.png" alt="">
+            <p>Take Two <br><span>Album &#x2022; BTS</span></p>
+        </div>
+        <div class="playlist-2">
+            <img src="images/artists.png" alt="">
+            <p>BTS<br><span>Playlist &#x2022; rockbison</span></p>
+        </div>
+        <div class="playlist-3">
+            <img src="images/top-songs.png" alt="">
+            <p>Your Top Songs 2022 <br><span>Playlist &#x2022; Spotify</span></p>
+        </div>
+        <div class="playlist-4">
+            <img src="images/bts.png" alt="">
+            <p>BTS<br><span>Artist </span></p>
+        </div>
+        <div class="playlist-5">
+            <img src="images/indigo.png" alt="">
+            <p>Indigo <br><span>Album &#x2022; RM</span></p>
+        </div>
+        <div class="playlist-6">
+            <img src="images/dreamers.png" alt="">
+            <p>Dreamers[Music from the FIFA World Cup] <br><span>Album &#x2022; Jung Kok</span></p>
+        </div>
+        <div class="playlist-7">
+            <img src="images/the-astronaut.png" alt="">
+            <p>The Astronaut <br><span>Album &#x2022; JIN</span></p>
+        </div>
+        <div class="playlist-8">
+            <img src="images/pied-piper.png" alt="">
+            <p>Pied Piper<br><span>Playlist &#x2022; rockbison</span></p>
+        </div>
+        <div class="artist-1">
+            <img src="images/v.png" alt="">
+            <p>V <br><span>Artist</span></p>
+        </div>
+        <div class="artist-2">
+            <img src="images/jimin.png" alt="">
+            <p>Jimin<br><span>Artist</span></p>
+        </div>
+        <div class="artist-3">
+            <img src="images/j-hope.png" alt="">
+            <p>j-hope<br><span>Artist</span></p>
+        </div>
+        <div class="artist-4">
+            <img src="images/suga.png" alt="">
+            <p>SUGA <br><span>Artist</span></p>
+        </div>
+        <div class="artist-5">
+            <img src="images/rm.png" alt="">
+            <p>RM <br><span>Artist</span></p>
+        </div>
+        <div class="artist-6">
+            <img src="images/jin.png" alt="">
+            <p>JIN <br><span>Artist</span></p>
+        </div>
+        <div class="artist-7">
+            <img src="images/jk.png" alt="">
+            <p>Jung Kook <br><span>Artist</span></p>
+        </div>
+    </div>
+
+    <div class="current-song">
+        <div class="right-part">
+            <img src="images/run-bts.png" alt="">
+            <p><span>Run BTS</span> <br> <span class="second">BTS</span></p>
+            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="middle-part">
+            <div class="upper-part">
+                <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-circle-pause" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-repeat" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="lower-part">
+                <span class="moment">0:20</span><img src="images/progress-bar2.png" alt=""><span class="total-duration">3:24</span>
+            </div>
+        </div>
+
+        <div class="left-part">
+            <i class="fa-solid fa-circle-play" style="color: #c6c3c3;"></i>
+            <i class="fa-solid fa-microphone" style="color: #c6c3c3;"></i>
+            <i class="fa-solid fa-layer-group" style="color: #c6c3c3;"></i>
+            <i class="fa-solid fa-computer" style="color: #c6c3c3;"></i>
+            <i class="fa-solid fa-volume-high" style="color: #c6c3c3;"></i>
+            <img src="images/volume-bar.png" alt="">
+        </div>
+    </div>  
+
+
 </body>
 </html>

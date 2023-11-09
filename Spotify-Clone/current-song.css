@@ -1,0 +1,102 @@
+.current-song{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 95px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 556px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.right-part{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.current-song .right-part img{
+    height: 73px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 18px;
+}
+
+.current-song .right-part p{
+    margin-right: 19px;
+}
+
+.current-song .right-part i{
+    margin-top: -20px;
+}
+
+.current-song .right-part p .second{
+    font-size: 14px;
+    color: #c6c3c3;
+}
+.middle-part{
+    flex: 0.75;
+    margin-left: 105px;
+    margin-top: 15px;
+}
+
+.middle-part .upper-part{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.middle-part .upper-part i{
+    font-size: 18px;
+    margin-right: 31px;
+}
+
+.middle-part .upper-part .fa-circle-pause{
+    font-size: 35px;
+}
+
+.middle-part .lower-part{
+    display: flex;
+    align-items: center;
+}
+
+.middle-part .lower-part img{
+    height: 30px; 
+    max-width: 462px;
+    margin-top: 6px;
+    flex: 1;
+}
+
+.middle-part .lower-part .moment{
+    margin-right: 5px;
+    font-size: 14px;
+    color: #c6c3c3;
+}
+
+.middle-part .lower-part .total-duration{
+    margin-left: 5px;
+    font-size: 14px;
+    color: #c6c3c3;
+}
+
+.left-part{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-part i{
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+.left-part img{
+    width: 90px;
+}

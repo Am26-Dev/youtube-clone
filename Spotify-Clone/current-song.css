@@ -1,12 +1,13 @@
 .current-song{
     background-color: black;
+    /* background: purple; */
     color: white;
     width: 100vw;
     height: 95px;
     position: fixed;
     left: 0;
     right: 0;
-    top: 556px;
+    bottom: 0;
     color: white;
     display: flex;
     align-items: center;
@@ -19,6 +20,11 @@
     align-items: center;
     margin-left: 10px;
 }
+
+/* .current-song .right-part{
+    position: absolute;
+    left: 0;
+} */
 
 .current-song .right-part img{
     height: 73px;
@@ -55,6 +61,7 @@
 .middle-part .upper-part i{
     font-size: 18px;
     margin-right: 31px;
+    /* text-align: center; */
 }
 
 .middle-part .upper-part .fa-circle-pause{

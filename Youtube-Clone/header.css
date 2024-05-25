@@ -245,13 +245,27 @@ header{
     overflow-x: scroll;
 } */
 
+.more-options{
+    border: none;
+    padding: 5px 12px 5px 12px;
+    /* background-color: rgb(225, 225, 225); */
+    margin-right: 8px;
+    margin-left: -6px;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.more-options::-webkit-scrollbar{
+    display: none;
+}
+
 .more-options button{
     border: none;
     padding: 5px 12px 5px 12px;
     background-color: rgb(225, 225, 225);
     border-radius: 8px;
     margin-right: 8px;
-    white-space: nowrap;
+    margin-top: 5px;
 }
 
 .more-options button:hover{
